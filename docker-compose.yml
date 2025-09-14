@@ -87,8 +87,8 @@ services:
       - "1883:1883"
     volumes: 
       # - ./configuration/mosquitto/config/:/mosquitto/config/
-      - ../files/mosquitto.conf:/etc/mosquitto/mosquitto.conf:ro
-      - ../files/passwd_file:/etc/mosquitto/passwd_file:ro
+      - ../files/mosquitto.conf:/mosquitto/mosquitto.conf:ro
+      - ../files/passwd_file:/mosquitto/passwd_file:ro
     networks:
       - chirp_network
 volumes:
