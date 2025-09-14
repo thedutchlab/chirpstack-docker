@@ -4,7 +4,8 @@ services:
     command: -c /etc/chirpstack
     restart: unless-stopped
     volumes:
-      - ./configuration/chirpstack:/etc/chirpstack
+      # - ./configuration/chirpstack:/etc/chirpstack
+      - ../files/region_eu868.toml:/etc/chirpstack/region_eu868.toml:ro
     depends_on:
       - postgres
       - mosquitto
