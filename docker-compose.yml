@@ -6,6 +6,7 @@ services:
     volumes:
       # - ./configuration/chirpstack:/etc/chirpstack
       - ../files/region_eu868.toml:/etc/chirpstack/region_eu868.toml:ro
+      - ../files/chirpstack.toml:/etc/chirpstack/chirpstack.toml:ro
     depends_on:
       - postgres
       - mosquitto
