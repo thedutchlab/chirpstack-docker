@@ -88,7 +88,7 @@ services:
     volumes: 
       # - ./configuration/mosquitto/config/:/mosquitto/config/
       - ../files/mosquitto.conf:/mosquitto/config/mosquitto.conf:ro
-      - ../files/passwd_file:/mosquitto/config/passwd_file:ro
+      - ../files/passwd_file:/mosquitto/passwd_file:ro
     networks:
       - chirp_network
 volumes:
